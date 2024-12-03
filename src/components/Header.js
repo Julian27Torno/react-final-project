@@ -1,6 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Header = ({ loggedIn, onLogout }) => {
+  const navigate = useNavigate(); // Initialize useNavigate for programmatic navigation
+
+  const handleLogout = () => {
+    onLogout(); // Call the parent logout handler
+    navigate("/login"); // Redirect to the login page
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -91,7 +98,7 @@ const Header = ({ loggedIn, onLogout }) => {
               <li className="nav-item">
                 <button
                   className="btn btn-outline-danger nav-link"
-                  onClick={onLogout}
+                  onClick={handleLogout} // Use the fixed logout handler
                 >
                   Logout
                 </button>

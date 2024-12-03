@@ -2,14 +2,14 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import LoggedInHome from "./components/LoggedInHome"; // Import the new Home component
+import LoggedInHome from "./components/LoggedInHome";
 import Blog from "./components/Blog";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Profile from "./components/Profile";
-import OtherBlogs from "./components/OtherBlogs"; // Import the OtherBlogs component
+import OtherBlogs from "./components/OtherBlogs";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -52,7 +52,9 @@ const App = () => {
             />
             <Route path="/register" element={<Register />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/other-blogs" element={<OtherBlogs />} /> {/* Add this route */}
+            <Route path="/other-blogs" element={<OtherBlogs />} />
+            {/* Fallback route */}
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
 

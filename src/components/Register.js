@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [activeTab, setActiveTab] = useState(1);
@@ -8,6 +9,8 @@ function Register() {
     accountInfo: { username: "", password: "", profilePhoto: null },
     additionalDetails: { bio: "" },
   });
+  const [showSuccess, setShowSuccess] = useState(false); // State for success message
+  const navigate = useNavigate(); // Hook for navigation
 
   const handleInputChange = (section, field, value) => {
     setFormData((prev) => ({
@@ -50,17 +53,21 @@ function Register() {
     // Save the new user in localStorage
     localStorage.setItem("users", JSON.stringify([...existingUsers, newUser]));
 
-    alert("Registration Successful!");
-    console.log("Saved User:", newUser);
+    // Show success message
+    setShowSuccess(true);
 
-    // Reset the form and navigate back to the first step
-    setFormData({
-      personalInfo: { firstName: "", lastName: "", dob: "" },
-      contactInfo: { email: "", phone: "" },
-      accountInfo: { username: "", password: "", profilePhoto: null },
-      additionalDetails: { bio: "" },
-    });
-    setActiveTab(1);
+    // Reset the form and navigate after a delay
+    setTimeout(() => {
+      setFormData({
+        personalInfo: { firstName: "", lastName: "", dob: "" },
+        contactInfo: { email: "", phone: "" },
+        accountInfo: { username: "", password: "", profilePhoto: null },
+        additionalDetails: { bio: "" },
+      });
+      setActiveTab(1);
+      setShowSuccess(false); // Hide the message
+      navigate("/login"); // Redirect to the login page
+    }, 2000); // 2 seconds delay
   };
 
   return (
@@ -72,6 +79,13 @@ function Register() {
           Fill out the form step by step to register your account.
         </p>
       </div>
+
+      {/* Success Message */}
+      {showSuccess && (
+        <div className="alert alert-success" role="alert">
+          Registration successful! Redirecting to the login page...
+        </div>
+      )}
 
       {/* Progress Bar */}
       <div className="progress mb-4">
@@ -194,7 +208,11 @@ function Register() {
                       src={formData.accountInfo.profilePhoto}
                       alt="Preview"
                       className="img-fluid rounded-circle"
-                      style={{ width: "100px", height: "100px", objectFit: "cover" }}
+                      style={{
+                        width: "100px",
+                        height: "100px",
+                        objectFit: "cover",
+                      }}
                     />
                   </div>
                 )}

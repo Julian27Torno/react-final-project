@@ -45,7 +45,7 @@ function Footer() {
           <div className="col-md-4 mb-3">
             <h5>Contact Us</h5>
             <p>
-              <i className="bi bi-geo-alt-fill me-2"></i>123 Blog Street, Web City
+              <i className="bi bi-geo-alt-fill me-2"></i>Angeles University Foundation
             </p>
             <p>
               <i className="bi bi-telephone-fill me-2"></i>+1 (123) 456-7890
