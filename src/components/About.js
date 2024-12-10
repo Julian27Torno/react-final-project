@@ -70,7 +70,7 @@ const About = () => {
             <div className="col-md-4">
               <div className="card shadow-sm">
                 <img
-                  src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-1/369865538_6653028361478020_6227007946496683084_n.jpg?stp=dst-jpg_s200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHw-YC0jDtPDmISKUHYmbTc4breE8DIZsThut4TwMhmxC6KP3JrMyUZ2ePM3BFbWjs62kceWgIOm8xgBYI-beAN&_nc_ohc=xcPG6OgI9pYQ7kNvgHh7hD8&_nc_zt=24&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=AwNl4_lIMqiXXi2_adz3YOn&oh=00_AYDztbTlGY3NSYYjd12R2do3exAS4niZapVNSCZx48mc9A&oe=6754F708https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-1/369865538_6653028361478020_6227007946496683084_n.jpg?stp=dst-jpg_s200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHw-YC0jDtPDmISKUHYmbTc4breE8DIZsThut4TwMhmxC6KP3JrMyUZ2ePM3BFbWjs62kceWgIOm8xgBYI-beAN&_nc_ohc=xcPG6OgI9pYQ7kNvgHh7hD8&_nc_zt=24&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=AwNl4_lIMqiXXi2_adz3YOn&oh=00_AYDztbTlGY3NSYYjd12R2do3exAS4niZapVNSCZx48mc9A&oe=6754F708"
+                  src="https://scontent.fmnl33-5.fna.fbcdn.net/v/t39.30808-1/369865538_6653028361478020_6227007946496683084_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHw-YC0jDtPDmISKUHYmbTc4breE8DIZsThut4TwMhmxC6KP3JrMyUZ2ePM3BFbWjs62kceWgIOm8xgBYI-beAN&_nc_ohc=H84T-3mbPf8Q7kNvgEol7II&_nc_zt=24&_nc_ht=scontent.fmnl33-5.fna&_nc_gid=AopIQqGJqk8tCofvJM3O_V6&oh=00_AYDGFyygurqt2ASb3olimKpSF5TYiy60T0m0jb25lxUnLQ&oe=675DF948"
                   className="card-img-top"
                   alt="Team Member"
                 />
@@ -83,7 +83,7 @@ const About = () => {
             <div className="col-md-4">
               <div className="card shadow-sm">
                 <img
-                  src="https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/357707727_6385924128141068_1881381892591779604_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHr4cAfaJMcmuks3UhLAazcWxhV-MG9wAVbGFX4wb3ABZQn1rZoN9dnsysRED8-Be6ONKc2i_g0UZqQSaPzrfbf&_nc_ohc=Qkf_5IMdJTAQ7kNvgGPT4im&_nc_zt=23&_nc_ht=scontent.fmnl3-3.fna&_nc_gid=AQ2StZgB5pn2GsbOdk7IqWb&oh=00_AYALYjZrNdK5933fDwf9caB4dwqqvoHqaRfvhfx1chWm1Q&oe=675508BC"
+                  src="https://scontent.fmnl33-2.fna.fbcdn.net/v/t39.30808-6/357707727_6385924128141068_1881381892591779604_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHr4cAfaJMcmuks3UhLAazcWxhV-MG9wAVbGFX4wb3ABZQn1rZoN9dnsysRED8-Be6ONKc2i_g0UZqQSaPzrfbf&_nc_ohc=0s5VpBH8RJgQ7kNvgG4-RxB&_nc_zt=23&_nc_ht=scontent.fmnl33-2.fna&_nc_gid=AIHds6Ll74goJk8C5OD1XrZ&oh=00_AYDnl9BAm-IJHEBLTUpPu0jalTLw6W4ra8kvEKTyn-2c0A&oe=675E0AFC"
                   className="card-img-top"
                   alt="Team Member"
                 />
